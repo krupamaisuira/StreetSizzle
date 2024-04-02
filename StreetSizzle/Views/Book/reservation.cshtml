@@ -1,0 +1,173 @@
+﻿
+@{
+    ViewBag.Title = "Book Table";
+}
+<style>
+    .food {
+        background: none;
+    }
+</style>
+<main>
+
+    <!-- Page Header Start -->
+    <div class="page-header mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Book A Table</h2>
+                </div>
+                <div class="col-12">
+                    <a href="">Home</a>
+                    <a href="">Booking</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Booking Start -->
+    <div class="booking">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="booking-content">
+                        <div class="section-header">
+                            <p>Book A Table</p>
+                            <h2>Book Your Table For Private Dinners & Happy Hours</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                At Street Sizzle, we offer an exclusive dining experience with our private dinners and vibrant happy hours. Our private dinners provide the perfect setting for intimate gatherings, whether it's a romantic date night or a corporate event. With customizable menus and personalized service, we ensure that every detail is tailored to your preferences, creating a memorable and enjoyable experience for you and your guests. Meanwhile, our lively happy hours are ideal for unwinding after a long day or starting your evening on a high note. Indulge in handcrafted cocktails, premium wines, and delicious small plates while soaking in the energetic atmosphere of Street Sizzle.
+                            </p>
+                            <p>
+                                Booking your table for these exceptional experiences is quick and easy – simply fill out our online form with your preferred date, time, and any special requests, and let us take care of the rest. Join us at Street Sizzle for private dinners and happy hours that promise unforgettable moments and culinary delights.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="booking-form">
+                        @using (Html.BeginForm("bookreservation", "Book", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken();
+                            <div class="control-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Name" name="Name" required="required" />
+                                    <div class="input-group-append">
+                                        <div class="input-group-text"><i class="far fa-user"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Email" name="Email" required="required" />
+                                    <div class="input-group-append">
+                                        <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Mobile" name="Mobile" required="required" />
+                                    <div class="input-group-append">
+                                        <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="input-group date" id="date" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" placeholder="Date" name="Date" data-target="#date" data-toggle="datetimepicker" required="required" />
+                                    <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="input-group time" id="time" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" placeholder="Time" name="Time" data-target="#time" data-toggle="datetimepicker" required="required" />
+                                    <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="input-group">
+                                    <select class="custom-select form-control" name="TotalGuest" required="required">
+                                        <option value="" selected> -- Select Guests --</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guest</option>
+                                        <option value="3">3 Guest</option>
+                                        <option value="4">4 Guest</option>
+                                        <option value="5">5 Guest</option>
+                                        <option value="6">6 Guest</option>
+                                        <option value="7">7 Guest</option>
+                                        <option value="8">8 Guest</option>
+                                        <option value="9">9 Guest</option>
+                                        <option value="10">10 Guest</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn custom-btn" type="submit">Book Now</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+    <div class="food">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-burger"></i>
+                        <h2>la Street Food</h2>
+                        <p>
+                            "Experience India's culinary tapestry with our street food delights.
+                            Samosas: golden pockets of spiced goodness. Vada Pav: zesty potato
+                            fritter sliders. Burgers: a fusion twist on global favorites. Wraps: a
+                            flavorful Indian embrace. Dive into a world of taste sensations.A array of flavors and aromas sizzling on the streets"
+
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-snack"></i>
+                        <h2>La Chaat</h2>
+                        <p>
+                            "Discover the enticing world of Indian chaats at our table. These
+                            tantalizing street snacks combine crunchy, tangy, and spicy elements,
+                            creating an explosion of flavors that's an absolute delight for your taste
+                            buds,a symphony of flavors in every mouthful, inviting you to savor the essence of Indian street food."
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-cocktail"></i>
+                        <h2>Drinks</h2>
+                        <p>
+                            A creamy and indulgent yogurt-based drink, creating a refreshing and tropical delight that's ideal for cooling down on hot summer days.Garnished with nuts and dried fruits, it offers a harmonious blend of textures and flavors, making it a beloved treat during hot summer days or festive occasions.
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function () {
+        $('.nav-item').removeClass('active');
+        $('#nav-booking').addClass('active');
+    });
+    </script>
+</main>
+

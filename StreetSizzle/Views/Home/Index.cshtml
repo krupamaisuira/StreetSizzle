@@ -1,0 +1,359 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <style>
+        .feature-item > img {
+            width: 243px;
+            /* width: auto; */
+            height: 177px;
+        }
+
+        .team .team-img img {
+            height: 183px;
+        }
+
+        .team-img > img {
+            height: 160px;
+            width: 160px;
+        }
+
+        .testimonial-item {
+            height: 167px;
+        }
+    </style>
+    <!-- Nav Bar End -->
+    <!-- Carousel Start -->
+    <div class="carousel">
+        <div class="container-fluid">
+            <div class="owl-carousel">
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="~/Content/img/carousel-1.jpg" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Best <span>Quality</span> Ingredients</h1>
+                        <p>
+                            "Street Sizzle" introduces a vibrant twist to dining with its exclusive focus on street food delights. Dive into a world of flavor with our curated menu featuring an array of street food favorites.
+                        </p>
+                        <div class="carousel-btn">
+                            <a class="btn custom-btn" href="@Url.Action("Menu","Home")">View Menu</a>
+                            <a class="btn custom-btn" href="@Url.Action("reservation","Book")">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="~/Content/img/carousel-2.jpg" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>World’s <span>Best</span> Chef</h1>
+                        <p>
+                            Immerse yourself in the culture and excitement of street cuisine, all from the comfort of our welcoming establishment. Get ready to sizzle with Street Sizzle!
+                            .
+                        </p>
+                        <div class="carousel-btn">
+                            <a class="btn custom-btn" href="@Url.Action("Menu","Home")">View Menu</a>
+                            <a class="btn custom-btn" href="@Url.Action("reservation","Book")">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="~/Content/img/carousel-3.jpg" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Fastest Order <span>Delivery</span></h1>
+                        <p>
+                            Easily reserve your spot for an authentic street food experience or indulge in convenient ordering options for delivery or pickup.
+                        </p>
+                        <div class="carousel-btn">
+                            <a class="btn custom-btn" href="@Url.Action("Menu","Home")">View Menu</a>
+                            <a class="btn custom-btn" href="@Url.Action("reservation","Book")">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+    <!-- About Start -->
+    <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="~/Content/img/about-img.jpg" alt="Image">
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-header">
+                            <p>About Us</p>
+                            <h2>Cooking Since 1975</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Indulge in a culinary journey that captures the vibrant and diverse flavors of India with our Street Food Menu. Embarkon a delectable adventure through the bustling streets of this culturally rich country, where every bite tells a story and every dish is a masterpiece. From the savory chaat stalls of Delhi to the fragrant spice markets of Mumbai, our menu brings together an array of iconic street food delights that are sure to tantalize your taste buds and transport you tothe heart of India’s culinary tapestry. Join us as we celebrate the authenticity, creativity, and sheer joy that Indian street food brings to every bite. Welcome to a menu that’s a true celebration of flavors, where every dish is atestament to the art of street-side gastronomy.
+                            </p>
+                            <a class="btn custom-btn" href="@Url.Action("reservation","Book")">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Feature Start -->
+    <div class="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header">
+                        <p>Why Choose Us</p>
+                        <h2>Our Popular Dishes</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="feature-item">
+                                <img src="~/Content/img/dishes/Bhaji-pav-1536x1024.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="feature-item">
+                                <img src="~/Content/img/dishes/Chole-1536x1043.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="feature-item">
+                                <img src="~/Content/img/dishes/Dabeli-1536x1024.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="feature-item">
+                                <img src="~/Content/img/dishes/Pani-puri-1-1536x1024.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="feature-item">
+                                <img src="~/Content/img/dishes/chicken_65.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="feature-item">
+                                <img src="~/Content/img/dishes/drinks.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="feature-item">
+                                <img src="~/Content/img/dishes/Momos.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="feature-item">
+                                <img src="~/Content/img/dishes/Sandwich.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+    <!-- Food Start -->
+    <div class="food">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-burger"></i>
+                        <h2>la Street Food</h2>
+                        <p>
+                            "Experience India's culinary tapestry with our street food delights.
+                            Samosas: golden pockets of spiced goodness. Vada Pav: zesty potato
+                            fritter sliders. Burgers: a fusion twist on global favorites. Wraps: a
+                            flavorful Indian embrace. Dive into a world of taste sensations.A array of flavors and aromas sizzling on the streets"
+
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-snack"></i>
+                        <h2>La Chaat</h2>
+                        <p>
+                            "Discover the enticing world of Indian chaats at our table. These
+                            tantalizing street snacks combine crunchy, tangy, and spicy elements,
+                            creating an explosion of flavors that's an absolute delight for your taste
+                            buds,a symphony of flavors in every mouthful, inviting you to savor the essence of Indian street food."
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-cocktail"></i>
+                        <h2>Drinks</h2>
+                        <p>
+                            A creamy and indulgent yogurt-based drink, creating a refreshing and tropical delight that's ideal for cooling down on hot summer days.Garnished with nuts and dried fruits, it offers a harmonious blend of textures and flavors, making it a beloved treat during hot summer days or festive occasions.
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Food End -->
+    <!-- Team Start -->
+    <div class="team">
+        <div class="container">
+            <div class="section-header text-center">
+
+                <h2>Our Order place</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-3">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <a href="https://www.ubereats.com/ca" target="_blank"> <img src="~/Content/img/order/ubereat.png" alt="Image"></a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <a href="https://www.skipthedishes.com/" target="_blank"><img src="~/Content/img/order/skip.png" alt="Image"></a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <a href="https://www.doordash.com/" target="_blank"><img src="~/Content/img/order/door.png" alt="Image"></a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team End -->
+    <!-- Testimonial Start -->
+    <div class="testimonial">
+        <div class="container">
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item">
+
+                    <p>
+                        "Exceptional food and impeccable service. A true culinary gem!"
+                    </p>
+                    <h2>Muthusamy</h2>
+
+                </div>
+                <div class="testimonial-item">
+
+                    <p>
+                        Consistently delicious meals and a welcoming atmosphere. Highly recommend!"
+                    </p>
+                    <h2>Sravani</h2>
+
+                </div>
+                <div class="testimonial-item">
+
+                    <p>
+                        Amazing flavors and friendly staff make dining here a pleasure every time."
+                    </p>
+                    <h2>Krupa</h2>
+
+                </div>
+                <div class="testimonial-item">
+
+                    <p>
+                        The best restaurant experience in town! Delicious food and top-notch service.
+                    </p>
+                    <h2>Alex</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+    <!-- Blog Start -->
+    <div class="blog">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Food Blog</p>
+                <h2>Latest From Food Blog</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="~/Content/img/blog-1.jpg" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">"Tasting Excellence: A Culinary Journey at Street Sizzle</h2>
+                            <div class="blog-meta">
+                                <p><i class="far fa-user"></i>amar</p>
+                                <p><i class="far fa-list-alt"></i>Food</p>
+                                <p><i class="far fa-calendar-alt"></i>25-Mar-2024</p>
+                                <p><i class="far fa-comments"></i>10</p>
+                            </div>
+                            <div class="Tasting Excellence: A Culinary Journey at Street Sizzle">
+                                <p>
+
+                                    Embark on a gastronomic adventure as we delve into the exquisite flavors of Street Sizzle. From delectable appetizers to divine desserts, each dish is a masterpiece crafted with passion and precision. Join us as we explore the highlights of the menu, uncovering the culinary delights that make this restaurant a must-visit destination for food enthusiasts.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="~/Content/img/blog-2.jpg" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">"Savoring Moments: A Foodie's Guide to Street Sizzle"</h2>
+                            <div class="blog-meta">
+                                <p><i class="far fa-user"></i>Ashok</p>
+                                <p><i class="far fa-list-alt"></i>Food</p>
+                                <p><i class="far fa-calendar-alt"></i>27-Mar-2024</p>
+                                <p><i class="far fa-comments"></i>10</p>
+                            </div>
+                            <div class="Savoring Moments: A Foodie's Guide to Street Sizzle">
+                                <p>
+                                    Indulge your taste buds with our curated selection of must-try dishes at Street Sizzle. From signature entrees bursting with flavor to indulgent desserts that tantalize the senses, each bite is a celebration of culinary excellence. Join us on a culinary journey as we uncover the top recommendations and hidden gems that await diners at this esteemed establishment.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+    <script>
+$(document).ready(function () {
+    $('.nav-item').removeClass('active');
+    $('#nav-home').addClass('active');
+});
+    </script>
+</main>

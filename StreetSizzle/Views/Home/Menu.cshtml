@@ -1,0 +1,377 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+}
+<style>
+    .menu-img img {
+        height: 63px;
+        width: 80px;
+    
+    }
+</style>
+<main>
+    <!-- Page Header Start -->
+    <div class="page-header mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Food Menu</h2>
+                </div>
+                <div class="col-12">
+                    <a href="">Home</a>
+                    <a href="">Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Food Start -->
+    <div class="food mt-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-burger"></i>
+                        <h2>la Street Food</h2>
+                        <p>
+                            "Experience India's culinary tapestry with our street food delights.
+                            Samosas: golden pockets of spiced goodness. Vada Pav: zesty potato
+                            fritter sliders. Burgers: a fusion twist on global favorites. Wraps: a
+                            flavorful Indian embrace. Dive into a world of taste sensations.A array of flavors and aromas sizzling on the streets"
+
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-snack"></i>
+                        <h2>La Chaat</h2>
+                        <p>
+                            "Discover the enticing world of Indian chaats at our table. These
+                            tantalizing street snacks combine crunchy, tangy, and spicy elements,
+                            creating an explosion of flavors that's an absolute delight for your taste
+                            buds,a symphony of flavors in every mouthful, inviting you to savor the essence of Indian street food."
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <i class="flaticon-cocktail"></i>
+                        <h2>Drinks</h2>
+                        <p>
+                            A creamy and indulgent yogurt-based drink, creating a refreshing and tropical delight that's ideal for cooling down on hot summer days.Garnished with nuts and dried fruits, it offers a harmonious blend of textures and flavors, making it a beloved treat during hot summer days or festive occasions.
+                        </p>
+                        <a href="@Url.Action("Menu","Home")">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Food End -->
+    <!-- Menu Start -->
+    <div class="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Food Menu</p>
+                <h2>Delicious Food Menu</h2>
+            </div>
+            <div class="menu-tab">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#street">La Street</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#laChaat">La Chaat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#chinese">Chinese</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#drinks">Drinks</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="street" class="container tab-pane active">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/samosa.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Samosa</span> <strong>$1.99</strong></h3>
+                                        <p>Chruncy pastry filled with spiced potatoes,a beloved indian classic</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/dabeli.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Dabeli</span> <strong>$6.99</strong></h3>
+                                        <p>Exquisite blend of spiced potato,peanuts and chutneys in bun</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/vada pav.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Vada Pav</span> <strong>$4.99</strong></h3>
+                                        <p>Spicy potatao fritter in a bun,good street food sensation</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/mixed veg pakora.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Mixed Veg Pakoda</span> <strong>$9.99</strong></h3>
+                                        <p>Crispy fritters made from assorted vegetables coated in a spiced chickpea flour batter </p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/noodle burger.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Noodle Burger</span> <strong>$9.99</strong></h3>
+                                        <p>fusion delight featuring savory noodles sandwiched between toasted buns</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/panner burger.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Panner Burger</span> <strong>$8.99</strong></h3>
+                                        <p>Grilled paneer nestled between soft buns with fresh veggie</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="~/Content/img/menu-burger-img.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="laChaat" class="container tab-pane fade">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/chat papdi.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Chaat Papdi</span> <strong>$9.99</strong></h3>
+                                        <p>Crispy wheat flour crackers topped with savory yogurt, tangy tamarind chutney, and an array of flavorful spices."</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/samosa chaat.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Samosa Chaat</span> <strong>$9.99</strong></h3>
+                                        <p> Crispy samosas crumbled atop crunchy papdis, layered with tangy chutneys and aromatic spices</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/Pani-puri-1-1536x1024.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Pani Puri</span> <strong>$8.99</strong></h3>
+                                        <p>Hollow crispy shells filled with tangy tamarind water ,potatoes, and spicy chutneys</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/dahi puri.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Dahi Puri</span> <strong>$8.99</strong></h3>
+                                        <p>Crispy shells filled with yougrt,tangy chutney and flavoured spices</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/masala fries.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Masala Fries</span> <strong>$9.99</strong></h3>
+                                        <p>Crispy potato fries,seasoned with a blend of aromatic spices</p>
+                                    </div>
+                                </div>
+
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/cheese grill.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Cheese Grill Sandwich</span> <strong>$6.99</strong></h3>
+                                        <p>A delectable combination of melted cheese, butter,vegetable and toasted bread</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/panner sandwich.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Panner Sandwich</span> <strong>$7.99</strong></h3>
+                                        <p>Slices of paneer grilled with fresh vegetables and spices between toasted bread</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/sizzler sandwich.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Sizzle Special Sandwich</span> <strong>$8.99</strong></h3>
+                                        <p>A tantalizing blend of savory meats, fresh vegetables, and zesty sauces served hot off the grill.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="~/Content/img/blog-2.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chinese" class="container tab-pane fade">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/hot-soup.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Hot And Sour /Manchow Soup</span> <strong>$9.99</strong></h3>
+                                        <p>A flavorful blend of tangy broth, fresh vegetables, and aromatic spices, perfect for warming your soul.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/momos (2).jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Momos</span> <strong>$10.00</strong></h3>
+                                        <p>Delicate dumplings filled with a savory mixture of meats or vegetables, served with a side of spicy dipping sauce.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/spring rolls.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Spring Roll</span> <strong>$15.00</strong></h3>
+                                        <p>Crispy, golden parcels filled with a delicious mix of vegetables or meat, served with a tangy dipping sauce.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/Gobi-Manchurian.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Manchurian Veg Dry/Gravy</span> <strong>$12.99</strong></h3>
+                                        <p>Crispy vegetable balls tossed in a flavorful blend of tangy and spicy Manchurian sauce, available in both dry and gravy options.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/Indo-chinese-fried-rice_1200x1200.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Veg Hakka Fried Rice</span> <strong>$12.00</strong></h3>
+                                        <p>A fragrant and flavorful dish featuring stir-fried rice tossed with fresh vegetables and traditional Hakka spices.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/veg hakka noodle.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Veg Hakka Fried Noodles</span> <strong>$12.00</strong></h3>
+                                        <p>Stir-fried noodles infused with a medley of fresh vegetables and aromatic Hakka seasonings, delivering a delightful fusion of flavors.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="~/Content/img/menu-snack-img.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="drinks" class="container tab-pane fade">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/fresh lemonade.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Fresh lemonade</span> <strong>$5.99</strong></h3>
+                                        <p>A refreshing blend of tangy lemon juice, pure cane sugar, and crisp, chilled water, perfect for quenching your thirst on a hot day.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/masala soda.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Masala Soda</span> <strong>$5.99</strong></h3>
+                                        <p>A zesty and spicy concoction featuring carbonated soda infused with a blend of aromatic Indian spices, offering a unique and refreshing beverage experience.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/sizzler special shake.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Sizzle Special Shake</span> <strong>$15.00</strong></h3>
+                                        <p>Indulge in our signature shake, crafted with premium ingredients and bursting with flavor, delivering a delightful treat for your taste buds."</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/water bottle.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Water</span> <strong>$2.00</strong></h3>
+                                        <p>Pure, refreshing hydration to accompany your meal and keep you feeling refreshed throughout your dining experience.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-img">
+                                        <img src="~/Content/img/menu/falooda.jpg" alt="Image">
+                                    </div>
+                                    <div class="menu-text">
+                                        <h3><span>Falooda</span> <strong>$7.99</strong></h3>
+                                        <p> A delightful dessert beverage featuring layers of vermicelli, basil seeds, rose syrup, and ice cream, offering a fusion of textures and flavors in every sip.</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="~/Content/img/menu-beverage-img.jpg" alt="Image">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*</div>*@
+    <!-- Menu End -->
+    <script>
+$(document).ready(function () {
+    $('.nav-item').removeClass('active');
+    $('#nav-menu').addClass('active');
+});
+    </script>
+</main>
+
