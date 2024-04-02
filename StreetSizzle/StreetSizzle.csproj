@@ -280,6 +280,7 @@
     <Content Include="Content\lib\tempusdominus\js\moment.min.js" />
     <Content Include="Content\lib\tempusdominus\js\tempusdominus-bootstrap-4.js" />
     <Content Include="Content\lib\tempusdominus\js\tempusdominus-bootstrap-4.min.js" />
+    <Content Include="Database-script\database-script.sql" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
